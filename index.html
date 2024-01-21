@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="registrationpage" href="registration.html">
+    <title>InternSwift</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <button class="login" id="form-open">Log in/Sign Up</button>
+            </li>
+
+        </ul>
+        <h1>InternSwift</h1>
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search internships</h2>
+            <div class="dropdown">
+                <select name="internship" id="internship">
+                    <option value="" disabled selected>Search</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Content creater">Content creator</option>
+                    <option value="web developer">Web developer</option>
+                    <option value="UI/UX developer">UI/UX developer</option>
+                    <option value="Product designer">Product designer</option>
+                    <option value="Fashion designer">Fashion designer</option>
+                    <option value="Frontend developer">Frontend developer</option>
+                </select>
+            </div>
+
+
+            <!-- home -->
+            <section class="home">
+                <div class="form_container">
+                    <i class="uil uil-times"></i>
+                    <!-- login form  -->
+                    <div class="form login_form form_close">
+                        <form action="#">
+                            <h2>Login</h2>
+                            <div class="input_box">
+                                <input type="email" placeholder="Enter your email" required />
+                                <i class="uil uil-envelope-alt email"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder="Enter your password" required />
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-envelope-eye-slash pw_hide  password"></i>
+                            </div>
+
+                            <div class="option_field">
+                                <span class="checkbox">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Remember me</label>
+                                </span>
+                                <a href="#" class="forgot_pw">Forgot password?</a>
+                            </div>
+                            <a href="registration.html">
+                            <button class="button">Login Now</button>
+                            </a>
+                            <div class="login_signup">
+                                Already have an account? <a href="#" id="signup">Sign up</a>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <!-- Sign up form -->
+                    <div class="form signup_form">
+                        <form action="#">
+                            <h2>Signup</h2>
+                            <div class="input_box">
+                                <input type="email" placeholder="Create email" required />
+                                <i class="uil uil-envelope-alt email"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="password" placeholder="Confirm password" required />
+                                <i class="uil uil-lock password"></i>
+                                <i class="uil uil-envelope-eye-slash pw_hide  password"></i>
+                            </div>
+
+
+                            <button class="button">Signup Now</button>
+
+                            <div class="login_signup">
+                                Don't have an account? <a href="#" id="signup">Login</a>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section id="internship-list">
+
+            <!-- Internship listings will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; InternSwif@gmail.com</p>
+        <div class="row">
+            <div class="col-lg-3 mb-3">
+                <!-- Content in the first column, if needed -->
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Resources</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Placement statistics</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/">Job scopes</a></li>
+                    <!-- Add other necessary resource links -->
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Community</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/docs/5.3/getting-started/">Connect with us</a></li>
+                    <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Projects</a></li>
+                    <!-- Add other necessary community links -->
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>About us</h5>
+                <div class="section about-us">
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="text">InternSwift</span></li>
+                            <span class="icon icon-map-marker"></span><span class="text">VESIT, Chembur, Mumbai</span>
+                            </li>
+                            <a href="#"><span class="icon icon-phone"></span><span class="text">011-29581423</span></a>
+                            </li>
+                            <li><a href="mailto:internship@aicte-india.org"><span
+                                        class="icon icon-envelope"></span><span
+                                        class="text">www.InternSwift.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

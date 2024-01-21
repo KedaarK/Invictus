@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Candidate Registration</title>
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>Candidate Registration</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label>Gender:</label>
+        <div class="gender-container">
+          <label for="male"
+            ><input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Male"
+              required
+            />
+            Male</label
+          >
+          <label for="female"
+            ><input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+              required
+            />
+            Female</label
+          >
+          <label for="other"
+            ><input
+              type="radio"
+              id="other"
+              name="gender"
+              value="Other"
+              required
+            />
+            Other</label
+          >
+        </div>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification" required>
+          <option value="" disabled selected>Select Qualification</option>
+          <option value="High School">High School</option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Postgraduate">Postgraduate</option>
+        </select>
+
+        <label for="preferredCity">Preferred Work City:</label>
+        <input type="text" id="preferredCity" name="preferredCity" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="experience">Experience (in years):</label>
+        <input
+          type="number"
+          id="experience"
+          name="experience"
+          min="0"
+          required
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
